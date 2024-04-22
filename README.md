@@ -1,4 +1,4 @@
-# Proyecto Tasks
+# BacoPet
 
 ¡Bienvenido a BacoPet! Esta plataforma, creada con Python utilizando el framework Django, se dedica a facilitar el proceso de adopción de perros y gatos, así como brindar la oportunidad de ser un patrocinador para aquellos que desean apoyar esta noble causa. BacoPet está diseñada para ser una herramienta integral para quienes buscan dar un hogar amoroso a una mascota necesitada o desean contribuir financieramente a su cuidado y bienestar.
 
