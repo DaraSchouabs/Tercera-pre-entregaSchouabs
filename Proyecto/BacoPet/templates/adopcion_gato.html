@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Adopción de Gatos - BacoPet{% endblock %}
+
+{% block main_content %}
+<h2 class="form-title">Adopción de Gatos</h2>
+<form method="post" class="buscar-form">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Enviar</button>
+</form>
+{% endblock %}

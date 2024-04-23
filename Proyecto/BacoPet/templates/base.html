@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}BacoPet{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'base' %}" {% block nav_base %}{% endblock %}>Inicio</a></li>
+            <li><a href="{% url 'adopcion_perro' %}" {% block nav_adopcion_perro %}{% endblock %}>Adopción de Perros</a></li>
+            <li><a href="{% url 'adopcion_gato' %}" {% block nav_adopcion_gato %}{% endblock %}>Adopción de Gatos</a></li>
+            <li><a href="{% url 'ser_patrocinador' %}" {% block nav_ser_patrocinador %}{% endblock %}>Ser Patrocinador</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <img src="{% static 'icono-bacopet.jpg' %}" alt="Icono" class="icono">
+            <h1>BacoPet</h1>
+        </div>
+    </header>
+
+    {% block search_form %}
+    <form method="get" action="{% url 'buscar_resultados' %}" class="buscar-form">
+        <input type="text" name="nombre" placeholder="Buscar persona">
+        <button type="submit">Buscar</button>
+    </form>
+    {% endblock %}
+    
+    {% block content %}{% endblock %}
+
+    {% block main_content %}
+    <div class="imagen-container">
+        <img src="{% static 'adopcion.webp' %}" alt="Imagen" class="imagen-separada">
+    </div>
+    {% endblock %}
+
+    <footer>
+        <p>Derechos de autor © 2024 BacoPet</p>
+    </footer>
+
+    {% block extra_footer %}{% endblock %}
+</body>
+</html>

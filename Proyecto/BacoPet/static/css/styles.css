@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e8e7de;
+}
+
+nav, header {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icono {
+    margin-right: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+h1 {
+    margin: 10px; 
+    display: flex;
+    align-items: center;
+}
+
+main {
+    padding: 20px;
+    width: 100%;
+}
+
+footer {
+    background-color: #33475b;
+    color: #ffffff;
+    padding: 10px;
+    border-top: 2px solid #fdfdfd;
+    text-align: center;
+    margin-top: 0;
+}
+
+
+.imagen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+.imagen-separada {
+    width: 400px;
+    height: 200px;
+}
+
+form {
+    max-width: 600px;
+    margin: 10px;
+    background-color: #a5b983;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea, select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #5f919a;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #9daa7b;
+    color: #333;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #7f8f66;
+}
+
+nav a {
+    text-decoration: none; 
+    color: #333; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+nav a:hover {
+    background-color: #9daa7b; 
+    color: #ffffff; 
+}
+
+
+.buscar-form {
+    max-width: 600px; 
+    margin: 0 auto; 
+    text-align: left; 
+}
+
+.buscar-form label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+
+.buscar-form input[type="text"],
+.buscar-form input[type="email"],
+.buscar-form input[type="tel"],
+.buscar-form select,
+.buscar-form textarea {
+    display: block; 
+    width: calc(100% - 22px); 
+    margin-bottom: 15px; 
+}
+
+#id_telefono,
+#id_seguridad,
+#id_personas_conviven {
+    margin-top: 10px; 
+}
+
+
+.mensaje {
+    text-align: center; 
+    margin-top: 50px; 
+}
+
+.form-title {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+textarea {
+    width: 400px; 
+    resize: none; 
+}

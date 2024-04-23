@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3>Perros</h3>
+<ul>
+{% for perro in resultados_perros %}
+    <li>{{ perro.nombre_completo }}</li>
+{% endfor %}
+</ul>
+
+<h3>Gatos</h3>
+<ul>
+{% for gato in resultados_gatos %}
+    <li>{{ gato.nombre_completo }}</li>
+{% endfor %}
+</ul>
+
+<h3>Patrocinadores</h3>
+<ul>
+{% for patrocinador in resultados_patrocinadores %}
+    <li>{{ patrocinador.nombre_completo }}</li>
+{% endfor %}
+</ul>
+{% endblock %}
